@@ -1,11 +1,10 @@
 import React from "react";
 import "semantic-ui-css/semantic.min.css";
-import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <h1>App</h1>
     </div>
   );
 }
