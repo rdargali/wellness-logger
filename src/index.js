@@ -8,21 +8,15 @@ import ViewEntries from "./components/ViewEntries/ViewEntries";
 import LogEntry from "./components/LogEntry/LogEntry";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/">
-          <App />
-        </Route>
-        <Route path="/log">
-          <LogEntry />
-        </Route>
-        <Route path="/view">
-          <ViewEntries />
-        </Route>
+        <Route exact path="/" component={App} />
+        <Route path="/log" component={LogEntry} />
+        <Route path="/view" component={ViewEntries} />
       </Switch>
     </Router>
-  </React.StrictMode>,
+  </>,
   document.getElementById("root")
 );
