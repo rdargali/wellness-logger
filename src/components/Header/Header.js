@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "semantic-ui-react";
+
 import { Link } from "react-router-dom";
 
 import "./Header.css";
@@ -11,7 +11,7 @@ export default function Header() {
       <ul className="menu-header">
         <li>
           <Link to="/">
-            <Icon name="home" size="big" />
+            <h4></h4>
           </Link>
         </li>
 
